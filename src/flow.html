@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOW-AI</title>
+    <link rel="stylesheet" href="flow.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="currentDate">2026</h1>
+        <div class="timer-image-bg-container">
+            <img class="timer-bg-image" src="firehorse.png" alt="2026 Year of the Fire horse">
+            <div class="timer-container">
+                <div class="timer-circle">
+                    <svg viewBox="0 0 300 300">
+                        <circle class="circle-background" cx="150" cy="150" r="140"></circle>
+                        <circle class="circle-progress" cx="150" cy="150" r="140" 
+                                stroke-dasharray="879.64" stroke-dashoffset="879.64"></circle>
+                    </svg>
+                    <div class="timer-text" id="timerText">45:36</div>
+                </div>
+                <div class="phase-indicator" id="phaseIndicator">
+                    <span class="phase-work">Work Session</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="session-selector">
+            <h3>Select Session Type</h3>
+            <div class="session-options">
+                <button class="session-btn active" data-type="45_15">45/15 Mode</button>
+                <button class="session-btn" data-type="50_10">50/10 Mode</button>
+            </div>
+            <p class="session-info" id="sessionInfo">45 minutes work + 15 minutes break</p>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn">Start</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="stopBtn" disabled>Stop</button>
+            <button id="fastForwardBtn" disabled>Fast Forward</button>
+        </div>
+
+        <div class="status" id="status">Ready to start your focus session</div>
+
+        <div class="inspiration-text">
+            <img src="psalms91-4.png" alt="Psalms 91:4">
+            <br/ >
+            <br/ >
+            <h3>As bad as you want to address it, sometimes it's best to let God defend you. He saw too.</h3>
+            <br />
+            <p></p>
+            
+            <br />
+        </div>
+
+    </div>
+
+    <script src="flow.js"></script>
+</body>
+</html>
