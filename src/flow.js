@@ -113,6 +113,7 @@ class FlowTimer {
                 for (let i = 0; i < tracks.length; i++) {
                     const trackName = tracks[i];
                     this.status.textContent = `Loading ${trackName}...`;
+                    // Change from ../music/ to ../music/ (works both locally and on GitHub Pages)
                     const workResponse = await fetch(`../music/${sessionType}/${trackName}`);
                     if (!workResponse.ok) {
                         throw new Error(`Failed to fetch ${trackName}: ${workResponse.status}`);

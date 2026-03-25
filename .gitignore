@@ -3,3 +3,8 @@ node_modules/
 *.log
 .vscode/
 .idea/
+
+# Music files are tracked via Git LFS (.gitattributes)
+
+# Keep src/ as development folder (optional)
+# src/
